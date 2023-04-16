@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, CardContent, CardMedia, Typography } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Link } from "react-router-dom";
@@ -50,7 +51,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
           <Typography sx={{ fontSize: "15px", fontWeight: 500, color: "gray" }}>
             {parseInt(
               channelDetail?.statistics?.subscriberCount
-            ).toLocaleString("en-US")}
+            ).toLocaleString("en-US")}{" "}
             Subscribers
           </Typography>
         )}

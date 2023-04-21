@@ -10,7 +10,7 @@ import {
 } from "./components";
 
 const App = () => (
-  <BrowserRouter basename="/youtube_clone/">
+  <BrowserRouter>
     <Box sx={{ backgroundColor: "#000" }}>
       <Navbar />
       <Routes>
@@ -24,3 +24,4 @@ const App = () => (
 );
 
 export default App;
+// basename="/youtube_clone/"

@@ -17,14 +17,14 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
             className="category-btn"
             onClick={() => setSelectedCategory(category.name)}
             style={{
-              background: category.name === selectedCategory && "#FC1503",
+              background: category.name === selectedCategory && "#21e0fc",
               color: "#fff",
             }}
             key={category.name}
           >
             <span
               style={{
-                color: category.name === selectedCategory ? "white" : "red",
+                color: category.name === selectedCategory ? "white" : "#21e0fc",
                 marginRight: "15px",
               }}
             >

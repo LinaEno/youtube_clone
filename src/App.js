@@ -10,8 +10,8 @@ import {
 } from "./components";
 
 const App = () => (
-  <BrowserRouter basename="/youtube_clone/">
-    <Box sx={{ backgroundColor: "#000" }}>
+  <BrowserRouter>
+    <Box sx={{ backgroundColor: "#012b31" }}>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Feed />} />

@@ -38,7 +38,7 @@ const SearchBar = () => {
       />
       <IconButton
         type="submit"
-        sx={{ p: "10px", color: "red" }}
+        sx={{ p: "10px", color: "#21e0fc" }}
         aria-label="search"
       >
         <SearchIcon />

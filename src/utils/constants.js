@@ -1,37 +1,31 @@
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
-import HomeIcon from "@mui/icons-material/Home";
-import CodeIcon from "@mui/icons-material/Code";
-import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
-import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import FiberNewIcon from '@mui/icons-material/FiberNew';
 import LiveTvIcon from "@mui/icons-material/LiveTv";
-import SchoolIcon from "@mui/icons-material/School";
-import FaceRetouchingNaturalIcon from "@mui/icons-material/FaceRetouchingNatural";
-import CheckroomIcon from "@mui/icons-material/Checkroom";
-import GraphicEqIcon from "@mui/icons-material/GraphicEq";
+import WhatshotIcon from '@mui/icons-material/Whatshot';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import MovieFilterIcon from '@mui/icons-material/MovieFilter';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
+import SchoolIcon from '@mui/icons-material/School';
+import PodcastsIcon from '@mui/icons-material/Podcasts';
+import SportsIcon from '@mui/icons-material/Sports';
 import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
-import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
-import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
-
-export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 
 export const categories = [
-  { name: "New", icon: <HomeIcon /> },
-  { name: "JS Mastery", icon: <CodeIcon /> },
-  { name: "Coding", icon: <CodeIcon /> },
-  { name: "ReactJS", icon: <CodeIcon /> },
-  { name: "NextJS", icon: <CodeIcon /> },
-  { name: "Music", icon: <MusicNoteIcon /> },
-  { name: "Education", icon: <SchoolIcon /> },
-  { name: "Podcast", icon: <GraphicEqIcon /> },
-  { name: "Movie", icon: <OndemandVideoIcon /> },
-  { name: "Gaming", icon: <SportsEsportsIcon /> },
+  { name: "New", icon: <FiberNewIcon /> },
   { name: "Live", icon: <LiveTvIcon /> },
-  { name: "Sport", icon: <FitnessCenterIcon /> },
-  { name: "Fashion", icon: <CheckroomIcon /> },
-  { name: "Beauty", icon: <FaceRetouchingNaturalIcon /> },
+  { name: "Trending", icon: <WhatshotIcon /> },
+  { name: "Music", icon: <LibraryMusicIcon /> },
+  { name: "Movies", icon: <MovieFilterIcon /> },
+  { name: "Gaming", icon: <SportsEsportsIcon /> },
+  { name: "News", icon: <NewspaperIcon /> },
+  { name: "Learning", icon: <SchoolIcon /> },
+  { name: "Podcast", icon: <PodcastsIcon /> },
+  { name: "Sport", icon: <SportsIcon /> },
   { name: "Comedy", icon: <TheaterComedyIcon /> },
-  { name: "Gym", icon: <FitnessCenterIcon /> },
-  { name: "Crypto", icon: <DeveloperModeIcon /> },
+  { name: "Health", icon: <HealthAndSafetyIcon /> },
+  { name: "Crypto", icon: <CurrencyBitcoinIcon /> },
 ];
 
 export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";

@@ -1,43 +1,40 @@
-import React from "react";
-import { Stack } from "@mui/material";
+import { useState, useEffect } from "react";
+import { Typography, Box } from "@mui/material";
+import { useParams } from "react-router-dom";
 
-import { categories } from "../utils/constants";
+import { fetchFromAPI } from "../utils/API";
+import { Videos } from "./";
 
-const Categories = ({ selectedCategory, setSelectedCategory }) => (
-  <Stack
-    direction="row"
-    sx={{
-      overflowY: "auto",
-      height: { sx: "auto", md: "95%" },
-      flexDirection: { md: "column" },
-    }}
-  >
-    {categories.map((category) => (
-      <button
-        className="category-btn"
-        onClick={() => setSelectedCategory(category.name)}
-        style={{
-          background: category.name === selectedCategory && "#21e0fc",
-          color: "white",
-        }}
-        key={category.name}
+
+const SearchFeed = () => {
+  const [videos, setVideos] = useState(null);
+  const { searchTerm } = useParams();
+
+  useEffect(() => {
+    fetchFromAPI(`search?part=snippet&q=${searchTerm}`).then((data) =>
+      setVideos(data.items)
+    );
+  }, [searchTerm]);
+
+  return (
+    <Box p={2} minHeight="95vh">
+      <Typography
+        variant="h4"
+        fontWeight={900}
+        color="white"
+        mb={3}
+        ml={{ sm: "100px" }}
       >
-        <span
-          style={{
-            color: category.name === selectedCategory ? "white" : "#21e0fc",
-            marginRight: "15px",
-          }}
-        >
-          {category.icon}
-        </span>
-        <span
-          style={{ opacity: category.name === selectedCategory ? "1" : "0.8" }}
-        >
-          {category.name}
-        </span>
-      </button>
-    ))}
-  </Stack>
-);
+        Search Results for
+        <span style={{ color: "#FC1503" }}>{searchTerm}</span> videos
+      </Typography>
+      <Box display="flex">
+        <Box sx={{ mr: { sm: "100px" } }} />
+        <Videos videos={videos} />
+      </Box>
+    </Box>
+  );
+};
 
-export default Categories;
+
+export default SearchFeed;

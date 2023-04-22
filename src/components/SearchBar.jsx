@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import { fetchFromAPI } from "../utils/API";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");

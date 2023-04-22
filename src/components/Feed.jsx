@@ -17,23 +17,11 @@ const Feed = () => {
   }, [selectedCategory]);
 
   return (
-    <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
-      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
-        <Typography
-          variant="h4"
-          fontWeight="bold"
-          mb={2}
-          sx={{ color: "white" }}
-        >
-          {selectedCategory} <span style={{ color: "#21e0fc" }}>videos</span>
-        </Typography>
-
-        <Videos videos={videos} />
-      </Box>
+    <Stack sx={{ flexDirection: { sx: "column", md: "row-reverse" } }}>
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderLeft: "1px solid #21e0fc",
+          borderLeft: "1px solid #21dffc39",
           px: { sx: 0, md: 2 },
         }}
       >
@@ -48,6 +36,19 @@ const Feed = () => {
           sx={{ mt: 1.5, color: "#fff" }}
         ></Typography>
       </Box>
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          mb={2}
+          sx={{ color: "white" }}
+        >
+          {selectedCategory} <span style={{ color: "#21e0fc" }}>videos</span>
+        </Typography>
+
+        <Videos videos={videos} />
+      </Box>
+      
     </Stack>
   );
 };

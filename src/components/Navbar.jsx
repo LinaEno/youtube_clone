@@ -14,8 +14,9 @@ const Navbar = () => (
       background: "#012b31",
       top: 0,
       justifyContent: "flex-start",
-      gap: '30%',
+      gap: {xs: "5%", sm: '30%'}
     }}
+    
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />

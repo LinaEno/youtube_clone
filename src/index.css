@@ -26,7 +26,7 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #21e0fc !important;
+  box-shadow: 0 0 5px #21e0fc  !important;
   color: white !important;
 }
 
@@ -42,7 +42,7 @@ a {
 .search-bar {
   border: none;
   outline: none;
-  width: 350px;
+  width: 300px;
 }
 
 .category-btn {
@@ -58,7 +58,7 @@ a {
 
   padding: 7px 15px;
   margin: 10px 0px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   transition: all 0.3s ease;
 }
 
@@ -83,6 +83,6 @@ a {
     height: 45vh !important;
   }
   .search-bar {
-    width: 200px;
+    width: 150px;
   }
 }

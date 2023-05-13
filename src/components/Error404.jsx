@@ -11,7 +11,7 @@ function PageNotFound404() {
   useEffect(() => {
     const timerId = setTimeout(() => {
       navigate("/");
-    }, 50000000);
+    }, 5000);
 
     return () => clearTimeout(timerId);
   }, [navigate]);

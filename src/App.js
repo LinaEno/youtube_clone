@@ -8,9 +8,12 @@ import {
   Navbar,
   Feed,
 } from "./components";
+import PageNotFound404 from "./components/Error404";
 
 const App = () => (
-  <BrowserRouter basename="/youtube_clone/">
+  <BrowserRouter
+  //  basename="/youtube_clone/"
+  >
     <Box sx={{ backgroundColor: "#012b31" }}>
       <Navbar />
       <Routes>
@@ -18,6 +21,7 @@ const App = () => (
         <Route path="/video/:id" element={<VideoDetail />} />
         <Route path="/channel/:id" element={<ChannelDetail />} />
         <Route path="/search/:searchTerm" element={<SearchFeed />} />
+        <Route path="*" element={<PageNotFound404 />}/>
       </Routes>
     </Box>
   </BrowserRouter>
